@@ -1,0 +1,92 @@
+-----------------------------------------------------------------
+SETUP
+-----------------------------------------------------------------
+PMT = HAMAMATSU_R4998
+PMT_HV = -2000
+SOURCE = Fe-55 AC-6389
+SCINTILATOR = RMPS470
+
+-----------------------------------------------------------------
+Boards
+-----------------------------------------------------------------
+Board 0:
+ CAEN Digitizer Model DT5743 (S/N 21296)
+ Rel. FPGA: ROC 04.29 - Build 8716, AMC 1.02.24
+
+
+-----------------------------------------------------------------
+Statistics
+-----------------------------------------------------------------
+Acquisition started at 2025-11-18 11:52:37
+Acquisition stopped at 2025-11-18 11:52:42
+Acquisition stopped after 5.29 s (RealTime)
+Total processed events = 14000
+Total bytes = 58.3191 MB
+Board  0 : LastTstamp(s)   NumEvents      Rate(KHz)
+   Ch  0:        5.29          14000        0.0000
+
+
+-----------------------------------------------------------------
+Configuration File
+-----------------------------------------------------------------
+[CONNECTIONS]
+OPEN 0 = USB 0 0
+[OPTIONS]
+DATAFILE_PATH = ../data_output/
+SAVE_RAW_DATA = NO
+SAVE_TDC_LIST = NO
+SAVE_WAVEFORM = YES
+SAVE_ENERGY_HISTOGRAM = NO
+SAVE_TIME_HISTOGRAM = NO
+SAVE_LISTS = NO
+SAVE_RUN_INFO = YES
+OUTPUT_FILE_FORMAT = ASCII
+OUTPUT_FILE_HEADER = YES
+OUTPUT_FILE_TIMESTAMP_UNIT = 1 
+STATS_RUN_ENABLE = YES
+PLOT_RUN_ENABLE = YES
+DGTZ_RESET = YES
+SYNC_ENABLE = NO
+TRIGGER_FIXED = 10
+BOARD_REF = 0
+CHANNEL_REF = 0
+ENERGY_H_NBIN = 1K
+TIME_H_NBIN = 1K
+TIME_H_MODE = START_STOP
+TIME_H_MIN = -16
+TIME_H_MAX = 16
+[COMMON]
+INPUT_ENABLE = NO
+SAMPLING_FREQUENCY = 0
+INL_CORRECTION_ENABLE = YES
+TRIGGER_TYPE = NORMAL
+CHANNEL_TRIGGER_ENABLE = YES
+RECORD_LENGTH = 1024
+POST_TRIGGER = 20
+TRIGGER_EDGE = RISING
+TRIGGER_THRESHOLD = 0.5
+PULSE_POLARITY = POSITIVE
+FPIO_LEVEL =  NIM
+DC_OFFSET = 0
+GATE_WIDTH = 150
+PRE_GATE = 10
+NS_BASELINE = 15
+DISCR_MODE = CFD
+CFD_DELAY = 2
+CFD_ATTEN = 0.8
+TTF_SMOOTHING = 0
+[BOARD 0]
+INPUT_ENABLE = NO
+[BOARD 0 - CHANNEL 0]
+INPUT_ENABLE = YES
+DC_OFFSET = 0
+TRIGGER_EDGE = FALLING
+PULSE_POLARITY = NEGATIVE
+TRIGGER_THRESHOLD = -0.003  
+[BOARD 0 - CHANNEL 1]
+INPUT_ENABLE = NO
+DC_OFFSET = 0
+TRIGGER_EDGE = RISING
+PULSE_POLARITY = POSITIVE
+TRIGGER_THRESHOLD = +0.2
+TRIGGER_THRESHOLD = +0.2
